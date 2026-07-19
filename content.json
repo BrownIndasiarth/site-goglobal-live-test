@@ -1,0 +1,19 @@
+{
+  "slug": "goglobal-live-test",
+  "businessName": "GoGlobal Live Test",
+  "tagline": "testing deploy",
+  "about": "end to end check",
+  "phone": "+1 555 9999",
+  "email": "test@goglobal.dev",
+  "address": "Test City",
+  "heroImage": "",
+  "themeColor": "indigo",
+  "services": [
+    {
+      "title": "Consulting",
+      "description": "advisory"
+    }
+  ],
+  "hours": [],
+  "social": {}
+}

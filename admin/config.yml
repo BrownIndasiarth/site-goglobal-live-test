@@ -1,0 +1,38 @@
+# Decap CMS config for goglobal-live-test
+backend:
+  name: github
+  repo: BrownIndasiarth/site-goglobal-live-test
+  branch: main
+media_folder: "assets/images"
+public_folder: "/assets/images"
+collections:
+  - name: "content"
+    label: "Website Content"
+    files:
+      - name: "site"
+        label: "My Website"
+        file: "content.json"
+        fields:
+          - { label: "Business Name", name: "businessName", widget: "string" }
+          - { label: "Tagline", name: "tagline", widget: "string" }
+          - { label: "About", name: "about", widget: "text" }
+          - { label: "Phone", name: "phone", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Address", name: "address", widget: "string" }
+          - { label: "Hero Image", name: "heroImage", widget: "image", required: false }
+          - label: "Theme Color"
+            name: "themeColor"
+            widget: "select"
+            options: ["indigo", "emerald", "rose", "amber", "sky"]
+          - label: "Services"
+            name: "services"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+          - label: "Business Hours"
+            name: "hours"
+            widget: "list"
+            fields:
+              - { label: "Day", name: "day", widget: "string" }
+              - { label: "Time", name: "time", widget: "string" }
